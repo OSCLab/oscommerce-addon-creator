@@ -10,14 +10,14 @@
 
 $filename = (isset($_GET['file'])) ? $_GET['file'] : '';
 
-if($filename == 'modx.prosilver.en.xsl' ||  $filename == 'license.txt')
+if($filename == 'osc.addon.en.xsl' ||  $filename == 'license.txt')
 {
 	if(strpos('..', $filename) !== false)
 	{
 		exit;
 	}
 
-	$file = ($filename == 'modx.prosilver.en.xsl') ? './modx.prosilver.en.xsl' : './license.txt';
+	$file = ($filename == 'osc.addon.en.xsl') ? './osc.addon.en.xsl' : './license.txt';
 	if(!file_exists($file))
 	{
 		exit;
@@ -25,7 +25,7 @@ if($filename == 'modx.prosilver.en.xsl' ||  $filename == 'license.txt')
 
 	// Send file headers
 	header('Content-type: file');
-	header('Content-Disposition: attachment;filename=' . (($filename == 'modx.prosilver.en.xsl') ? 'modx.prosilver.en.xsl' : 'license.txt'));
+	header('Content-Disposition: attachment;filename=' . (($filename == 'osc.addon.en.xsl') ? 'osc.addon.en.xsl' : 'license.txt'));
 	header('Pragma: no-cache');
 	header('Expires: 0');
 
