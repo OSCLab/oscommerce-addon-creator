@@ -287,10 +287,10 @@ function add_author()
 		element += '</dl>';
 
 		element += '<dl>';
-			element += '<dt class="author-rows"><label for="author-' + field_id + '-phpbbcom">Not phpBB.com:</label></dt>';
+			element += '<dt class="author-rows"><label for="author-' + field_id + '-phpbbcom">Not osCommerce.com:</label></dt>';
 			element += '<dd class="author-rows"><label>';
 				element += '<input type="checkbox" name="author[' + field_id + '][phpbbcom]" id="author-' + field_id + '-phpbbcom" />';
-				element += '<span style="font-size: 12px;">(Check here if this author is not registered at phpBB.com.)</span>';
+				element += '<span style="font-size: 12px;">(Check here if this author is not registered at osCommerce.com.)</span>';
 			element += '</label></dd>';
 		element += '</dl>';
 
