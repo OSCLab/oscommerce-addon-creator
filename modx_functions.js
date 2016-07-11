@@ -287,9 +287,9 @@ function add_author()
 		element += '</dl>';
 
 		element += '<dl>';
-			element += '<dt class="author-rows"><label for="author-' + field_id + '-phpbbcom">Forum user ID:</label></dt>';
+			element += '<dt class="author-rows"><label for="author-' + field_id + '-forumid">Forum user ID:</label></dt>';
 			element += '<dd class="author-rows">';
-				element += '<input class="inputbox autowidth" type="text" name="author[' + field_id + '][phpbbcom]" id="author-' + field_id + '-phpbbcom" size="10" maxlength="25" value="" />';
+				element += '<input class="inputbox autowidth" type="text" name="author[' + field_id + '][forumid]" id="author-' + field_id + '-forumid" size="10" maxlength="25" value="" />';
 			element += '</dd>';
 		element += '</dl>';
 

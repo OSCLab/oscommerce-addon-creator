@@ -104,7 +104,7 @@ while ($author = $parser->get_modx_authors())
 		// <author>
 		$xml->startElement('author');
 		write_element('realname', trim($author['realname']));
-		write_element('username', trim($author['username']), ((isset($author['phpbbcom'])) ? array('phpbbcom' => $author['phpbbcom']) : ''));
+		write_element('username', trim($author['username']), ((isset($author['forumid'])) ? array('forumid' => $author['forumid']) : ''));
 		write_element('homepage', trim($author['homepage']));
 		write_element('email', trim($author['email']));
 		if (!empty($author['contributions']))
