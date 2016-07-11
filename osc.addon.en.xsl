@@ -1948,7 +1948,7 @@ function toggle_edit(o)
 						<xsl:variable name="authorname" select="mod:username" />
 						<xsl:for-each select="mod:username">
 							<xsl:choose>
-								<xsl:when test="not(@phpbbcom != '')">
+								<xsl:when test="not(@forumid != '')">
 									<dd name="author-dd"><span dir="ltr"><xsl:value-of select="$authorname" /></span></dd>
 								</xsl:when>
 
@@ -1967,10 +1967,10 @@ function toggle_edit(o)
 													<xsl:with-param name="string-in" select="string($authorurl)"/>
 												</xsl:call-template>
 											</xsl:variable>
-											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@phpbbcom}-{$operaurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
+											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@forumid}-{$operaurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
 										</xsl:when>
 										<xsl:otherwise>
-											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@phpbbcom}-{$authorurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
+											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@forumid}-{$authorurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
 										</xsl:otherwise>
 
 									</xsl:choose>
