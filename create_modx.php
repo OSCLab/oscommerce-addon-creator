@@ -104,7 +104,7 @@ while ($author = $parser->get_modx_authors())
 		// <author>
 		$xml->startElement('author');
 		write_element('realname', trim($author['realname']));
-		write_element('username', trim($author['username']), ((isset($author['phpbbcom'])) ? array('phpbbcom' => 'no') : false));
+		write_element('username', trim($author['username']), ((isset($author['phpbbcom'])) ? array('phpbbcom' => $author['phpbbcom']) : ''));
 		write_element('homepage', trim($author['homepage']));
 		write_element('email', trim($author['email']));
 		if (!empty($author['contributions']))
@@ -480,7 +480,7 @@ if ($preview)
 else if ($dload)
 {
 	header("Content-type: file");
-	header('Content-Disposition: attachment;filename=install_mod.xml');
+	header('Content-Disposition: attachment;filename=install.xml');
 	header('Pragma: no-cache');
 	header('Expires: 0');
 

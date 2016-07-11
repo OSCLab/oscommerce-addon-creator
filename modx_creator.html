@@ -45,7 +45,7 @@
 
 	<div class="panel">
 		<div class="inner"><span class="corners-top"><span></span></span>
-			<h3>About the MOD</h3>
+			<h3>About the Addon</h3>
 			<fieldset class="fields2">
 				<!-- begin mod title -->
 				<dl id="title-field"<!-- IF S_ERROR_TITLE --> class="error-dl"<!-- ENDIF -->>
@@ -75,7 +75,7 @@
 					<dt>
 						<label for="desc">Description:*</label>
 						<img class="action-image" src="./images/plus.png" alt="Add a description" onclick="add_desc();" title="Add a description in another language." />
-						<img class="sign" src="./images/info.png" alt="Info icon" title="One description in English is required. You can add descriptions in other languages as well. This needs to be descriptive; &quot;Install instructions for my MOD&quot; is not enough." />
+						<img class="sign" src="./images/info.png" alt="Info icon" title="One description in English is required. You can add descriptions in other languages as well. This needs to be descriptive; &quot;Install instructions for my Addon&quot; is not enough." />
 					</dt>
 					<!-- BEGIN desc_row -->
 					<dd id="{desc_row.FIELD_ID}">
@@ -105,7 +105,7 @@
 				<!-- begin mod version -->
 				<dl<!-- IF S_ERROR_VERSION --> class="error-dl"<!-- ENDIF -->>
 					<dt>
-						<label for="version">MOD version:*</label>
+						<label for="version">Addon version:*</label>
 						<img class="sign" src="./images/info.png" alt="Info icon" title="All versions less than 1.0.0 are development versions." />
 					</dt>
 					<dd><input class="inputbox autowidth" type="text" name="version" id="version" size="10" maxlength="25" value="{MOD_VERSION}" /></dd>
@@ -115,12 +115,12 @@
 				<!-- begin phpBB version -->
 				<dl<!-- IF S_ERROR_TARGET --> class="error-dl"<!-- ELSEIF S_WARNING_TARGET --> class="warning-dl"<!-- ENDIF -->>
 					<dt>
-						<label for="target">phpBB version:*</label>
-						<img class="sign" src="./images/info.png" alt="Info icon" title="Version of phpBB for which the MOD was developed. This should be an exact version, for example 3.0.5." />
+						<label for="target">osCommerce version:*</label>
+						<img class="sign" src="./images/info.png" alt="Info icon" title="Version of osCommerce for which the Addon was developed. This should be an exact version, for example 2.3.3." />
 					</dt>
 					<dd>
 						<input class="inputbox autowidth" type="text" name="target" id="target" size="10" maxlength="25" value="{TARGET_VERSION}" />
-						The latest phpBB version is: {PHPBB_LATEST}
+						The latest osCommerce version is: {PHPBB_LATEST}
 					</dd>
 				</dl>
 				<!-- end phpBB version -->
@@ -145,7 +145,7 @@
 				<dl<!-- IF S_ERROR_INSTALL_TIME --> class="error-dl"<!-- ENDIF -->>
 					<dt>
 						<label for="install-time">Installation time:*</label>
-						<img class="sign" src="./images/info.png" alt="Info icon" title="Estimated time needed to install this MOD by hand, in minutes." />
+						<img class="sign" src="./images/info.png" alt="Info icon" title="Estimated time needed to install this Addon by hand, in minutes." />
 					</dt>
 					<dd><input class="inputbox autowidth" type="text" name="install-time" id="install-time" size="2" maxlength="3" value="{INSTALL_TIME}" />Minutes</dd>
 				</dl>
@@ -155,7 +155,7 @@
 				<dl>
 					<dt>
 						<label for="license">License:*</label>
-						<img class="sign" src="./images/info.png" alt="Info icon" title="The name of the license the MOD is released under, along with a URL to the full text of that license. We recommend submitting under GPL v2. Submitting MODs under GPL v3 is not allowed because phpBB3 is released under GPL v2 only and GPL v3 is not compatible with v2. You are allowed to submit it under some other license under condition that it is compatible with GPL v2. Be sure to change the license within the textbox and include a copy of the license in license.txt." />
+						<img class="sign" src="./images/info.png" alt="Info icon" title="The name of the license the Addon is released under, along with a URL to the full text of that license. We recommend submitting under GPL v2. Submitting Addons under GPL v3 is not allowed because osCommerce is released under GPL v2 only and GPL v3 is not compatible with v2. You are allowed to submit it under some other license under condition that it is compatible with GPL v2. Be sure to change the license within the textbox and include a copy of the license in license.txt." />
 					</dt>
 					<dd><input class="inputbox" id="license" type="text" name="license" size="70" maxlength="255" value="{LICENSE}" /></dd>
 				</dl>
@@ -197,7 +197,7 @@
 				<dl<!-- IF S_ERROR_GITHUB --> class="error-dl"<!-- ENDIF -->>
 					<dt>
 						<label for="github">GitHub link:</label>
-						<img class="sign" src="./images/info.png" alt="Info icon" title="This needs to be a fully qualified URL to the MOD repo at GitHub." />
+						<img class="sign" src="./images/info.png" alt="Info icon" title="This needs to be a fully qualified URL to the Addon repo at GitHub." />
 					</dt>
 					<dd><input class="inputbox" id="github" type="text" name="github" size="70" maxlength="255" value="{GITHUB}" /></dd>
 				</dl>
@@ -221,13 +221,8 @@
 							</dd>
 						</dl>
 						<dl>
-							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-phpbbcom">Not phpBB.com:</label></dt>
-							<dd class="author-rows">
-								<label>
-									<input type="checkbox" name="author[{author_row.FIELD_ID}][phpbbcom]" id="author-{author_row.FIELD_ID}-phpbbcom"<!-- IF author_row.S_PHPBB_COM --> checked="checked"<!-- ENDIF --> />
-									<span style="font-size: 12px;">(Check here if this author is not registered at phpBB.com.)</span>
-								</label>
-							</dd>
+							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-phpbbcom">Forum user ID:</label><img class="sign" src="./images/info.png" alt="Info icon" title="If the author is registered to forums.oscommerce.com will be created a link to profile." /></dt>
+							<dd><input class="inputbox autowidth" type="text" name="author[{author_row.FIELD_ID}][phpbbcom]" id="author-{author_row.FIELD_ID}-phpbbcom" size="10" maxlength="25" value="{author_row.PHPBB_COM}" /></dd>
 						</dl>
 						<dl>
 							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-realname">Real name:</label></dt>
@@ -293,10 +288,8 @@
 							</dd>
 						</dl>
 						<dl>
-							<dt class="author-rows"><label for="author-afield-phpbbcom">Not phpBB.com:</label></dt>
-							<dd class="author-rows">
-								<label><input type="checkbox" name="author[afield][phpbbcom]" id="author-afield-phpbbcom" /><span style="font-size: 12px;">(Check here if this author is not registered at phpBB.com.)</span></label>
-							</dd>
+							<dt class="author-rows"><label for="author-afield-phpbbcom">Forum user ID:</label></dt>
+							<dd class="author-rows"><input  class="inputbox autowidth" name="author[afield][phpbbcom]" type="text" id="author-afield-phpbbcom" size="10" maxlength="25" value="" /></dd>
 						</dl>
 						<dl>
 							<dt class="author-rows"><label for="author-afield-realname">Real name:</label></dt>
@@ -414,7 +407,7 @@
 					<!-- END link_row -->
 				</div>
 				<input class="button2" type="button" value="Add link" onclick="add_link();" />
-				<img class="sign" src="./images/info.png" alt="Info icon" title="Links are optional. You can have one or more of the following link types. Dependency – A MOD that is required before the current MOD can be installed. Parent – Link from a contrib, language, or template back to the parent MODX file. Template – Link to template-specific instructions. Language – Link to instructions for installing a non-English translation. Contrib – Link to a contribution, for example an additional feature or upgrade from an older version. Template-lang – Link to a template and language specific instruction. Text – A text file. PHP install file – A php install file that needs to be run in order to install the MOD. All fields are required." />
+				<img class="sign" src="./images/info.png" alt="Info icon" title="Links are optional. You can have one or more of the following link types. Dependency – A Addon that is required before the current Addon can be installed. Parent – Link from a contrib, language, or template back to the parent AddonX file. Template – Link to template-specific instructions. Language – Link to instructions for installing a non-English translation. Contrib – Link to a contribution, for example an additional feature or upgrade from an older version. Template-lang – Link to a template and language specific instruction. Text – A text file. PHP install file – A php install file that needs to be run in order to install the Addon. All fields are required." />
 			</fieldset>
 			<!-- end Link fields -->
 
@@ -445,7 +438,7 @@
 					<!-- ENDIF -->
 				</div>
 				<input class="button2" id="addCopyField" type="button" value="Add copy field" onclick="add_copy(); document.getElementById('addCopyField').style.display='none';"<!-- IF S_IS_COPY --> style="display: none;"<!-- ENDIF --> />
-				<img class="sign" src="./images/info.png" alt="Info icon" title="Both from and to fields are required. You can have as many copy fields as you need. The from field must contain the relative path from the current MODX file to the source file. Example: root/survey.php. Can also be a wildcard match using *.* Example: root/*.*. The to field must contain the the relative path from the phpBB root to the destination of the file. Should be an exact filename if an exact file name was given in the from attribute, or a directory name if a wildcard was used." />
+				<img class="sign" src="./images/info.png" alt="Info icon" title="Both from and to fields are required. You can have as many copy fields as you need. The from field must contain the relative path from the current AddonX file to the source file. Example: root/survey.php. Can also be a wildcard match using *.* Example: root/*.*. The to field must contain the the relative path from the phpBB root to the destination of the file. Should be an exact filename if an exact file name was given in the from attribute, or a directory name if a wildcard was used." />
 			</fieldset>
 			<!-- end File copy -->
 
@@ -626,7 +619,7 @@
 			<dl id="diy-field">
 				<dt>
 					<img class="action-image" src="./images/plus.png" alt="Add DIY" onclick="add_diy();" title="Add DIY field" />
-					<img class="sign" src="./images/info.png" alt="Info icon" title="You can have multiple DIY fields or none Do It Yourself Instructions, or instructions that cannot be described accurately using the other MODX commands." />
+					<img class="sign" src="./images/info.png" alt="Info icon" title="You can have multiple DIY fields or none Do It Yourself Instructions, or instructions that cannot be described accurately using the other Addon commands." />
 				</dt>
 				<!-- BEGIN diy_row -->
 				<dd id="{diy_row.FIELD_ID}">

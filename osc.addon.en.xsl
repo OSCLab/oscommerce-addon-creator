@@ -54,7 +54,7 @@ html>body, html>div, html>p, html>th, html>td, html>li, html>dd {
 
 html {
 	color:#536482;
-	background:#DBD7D1;
+	/* background:#DBD7D1; */
 	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-ie browsers */
 	height:100%;
 	margin-bottom:1px;
@@ -64,7 +64,7 @@ body {
 	/* Text-Sizing with ems:http://www.clagnut.com/blog/348/ */
 	font-family:"Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	color:#536482;
-	background:#DBD7D1;
+	/* background:#DBD7D1; */
 	font-size:82.5%;	/* This sets the default font size to be equivalent to 10px */
 	margin:10px 15px;
 }
@@ -154,12 +154,7 @@ a:active {
 #page-header {
 	clear:both;
 	text-align:right;
-	background:url(data:image/gif;base64,R0lGODlhiwAwAPf/AMG+uerr7b66tf38/aWint3g4dbSzZaUkefs7+/u7a2qpuHf2tTQyrm2sc7T1bzBxKimoePi4djUz6Wkofb4+ubm5urv8evq6J2bmOjq7N3a1K6sqNDU1/L09rGuqo6MitDMx7m+wcLExejm4318ebS5vNTZ3Pr6+u7w8tbY2PHz9JKQjd/e3e3s69LOyKqopLSxrfj6+pyZlc7KxW1raezv8HV0coWDgeTn6NrW0MTFxeDl6NPW2OXo6np5duHg37a1srKvq8zQ08zOztrd3+no5/n7/JiWk76+vuDk5tbW1ubk4JCNiuXi3crO0KKgnHJxbuLk5t3f4cnNzsjEv+7w8bGxsL+9usXEwvX08+zw8ubq7MfDvoiGg/T299jb3LW1tdza2MjFwNba3N3c2fX3+MbJytDNyMLBv9fTzYqJh9jX1IB/fKuqqNvf4cfEv/n5+PDy887R0rq4tMTBvLWyrvT09PLz9O/y9KCem3h3dNrZ19LU1s3LycrGweHj5Lq5uPf398vIw+br7unt8MbKzdHW2cLHyuXq7NPX2uPo68nN0L/Ex+Ln6tfc39/k593i5dne4drf4tbb3tzh5K+0t62ytdnV0LK2uezq5szJw7azrre8vs/MxqyxtM3JxOvw88nIxvz8+/Hv7c/LxvD1+K+xssvHwu/099PPyuzx9O3y9e7z9sfLzvr6+ff29cLAu/H2+fL3+bO3ur+8t+Dc17i9v8fMzvv8/G9ua8LGx9bU0OHm6bC1uPPy8M/U1bOwrMPIy9TX2t/i4+bp69/c18DFx8HGyM3KxOPm59XRy9XSzauws83R1MbCvdHV1/T4+unu8Ort783P0N/j5fTz8cTAu7a4uMTCwLy6uLu4s9PT0rCztLK0tbSysMvKyMvMzc7NzM3Q0M7Q0fb19NXT0dnW0MfGxNHOyNDOy9PU1ayrq4OBfre0sOPl5aqvsrG2ucnGwN
-jZ2fn498XCvfHx8NPQzLO4u8LCwsLDxK6ztqekoPj39szIw////9vX0SH5BAEAAP8ALAAAAACLADAAAAj/AP8JHEiwoMGD//wpdDWqFsKHECNKnEixosWLB9Mo3DigGMaPFDUsyTQqy4CNKLOMGqEhokiSJlFuVMkSZMVO/t69K/HLX5FUNoMWbOFKplGjo1oaJHq0qcKkQiH28+eJmVU+cBpEFXpJoZFkX+TogueprFlPuuQUMOJvQJOCXf19DTv2rNm0a9u+3Wpwqj5LgO/5U8DXZip/tgArXsxY8ReFewUeTty4smPIhQlO7VWpcy9/+zJ/nOGPc+fTqFOfnhLgxLKBpE2rnr269WvRU2dh2j3LHwHRGHPvHj6Lm6njproNX+7EXxgJAoUvL448+fLhzZ/j9leie3ffwC9O//XeXUcuGyTSk/DBZt0D8iWknKATnTt58+jVs3cPXz59hBqMUNJJ/rjiSyZKHTSVLZw0aAtoAjXhC4H8HOhQRQEOuNCBCfaFWIOcOMHCAcDUsckmdQQBwQFAmAEiJ8b4A0t9DDYoIokmoqgiiy6CGOOMBmmQCYFNIaigPyEkmaQ/XGiQhVNZXAiRkEQeZaSHSoYgxA8vkNIJCCB0MoMY7byQQpYh3HEFUFNluWWXX4Y5ZplnZqmmQQvAoRAOXzhwzAMPFMLDH7j488oCHgKqqD+7nFQFD38+4MSggbQ1AkR57tlnpIISaiiiBU2l6AMORACMQRKcIcAaToxaxRwz/P8jqqKlnlpQqqu2quir0A20gCj+RHELI8QWW+wtUfgjCqgDTWWMsXZU+oex1Eqh0KUH/RrssNQem+yyofrzLLEcmHrQJZqEUYCxVQDRj6ziFluurXClu26x7aYxUDHAEnHIvwAHDDAR/syTg2b+BBMwwf4KLLADxLhmEL/+NOywwAQbjLDC/yZi7kEu1DNMwFVMoAm8HB/iMb0FhTwywCXrK1A1/khRyM04t9IKzjxbWwTCO/PsAM9B83wzB/
-4soUxBNNtstM5G3+wz0DiP8bFBZPjzDM9FyMCmP0VbzTJBWW+Nc9cyLxDsImyzfc0HNORywwRTtM12D4w2648Tdrf/LcIBNuTiQx759L1IsmIQpHYUfb8d99x12433LnrzzfYXFZxy0BKixGF3IlZAcAm8li+CueYGce5526CL/k8OCdwhxOxC8PCCDysQoMA+B6ygBO2z3zHCGfU1A/zsgNigRh4vQCCDGjocL8QA9vQKu+y024677rz7frzwxMNr/OxEkDNSJuiTVFTNwIPTBQDF017++emPsr4U7b8vkDn+DOPA/w4ABxsgAItTnOINAoAAAdwBQAcMwx+Jg9cvGugAIvjgCQAQwynEAIAN5CEFFKwBGaiwv/41UIAENCACFchAAD4wglOZ4P9M4JQquKGBSLgBBJYmQQDSsCk2xKEO/3m4gAFw4IgcSMYRnjADAxxMAgzgQhDCMQYkcuAE6VjaVJ5hRSIEQQaCUMboLmGAfrQDCwWwYjIqIACBFFGNS2ziE6M4xSoiEYta1JoVxxCAPvoxGXY8ohmOwAYC9GN08OIiEvnoxz4C0oqDLOQh/3GJH8TBEJg0RAWY8AZEDiQNdJhDADJpCBFyAV6kLKUMtNGrgUggHg24ZCYhMY9TVVKWmNxkJwsCSlGS0pSoTKUwUwmJFpyjAf1o5VSGyUxMFvOYyRSIARIgjURYkwjhIIDMCoIOASTAmtbEARvhJQxwJuIEBwDBQZQBgAGYcwz+eME/plnNa2ZzmwTp5jfBKf/ONk6lnOYMqECt5Y8EHExvABWoQhNBUIMOhAEtSIIJJkoMNGwCIRJ4QxEkMVETJMEfp5pKRyfqjzy0kiCXEEMRRkrD30BUohS1KEY1ytGJfjSk/mCpCXQggp769BkjpYYKDJUgkbKUpz7tKVA7KlSiCuQM/tjBJKZagyvQ4iGf2INUpzoJf0AAXlydKngQookLbFWsv4HqWat6VYRk9axd/epUwjoJFEBBPenxgR5WMISw1sAfF9AbXe2K1/
-Xsta9c/Wtg/0EKfzjisY5AQTac8RAQrEEakHUEeKaSWc3+BiGkuAAvMguexmZWspRFiGUxC9nNOpa0HziRbGHgwSP/yCOzf6UcvDrrj9jKdhO0zYNtcZu3T/gjEsiNRAe+cUqEpGIPVUhuJFwr3el+9iAguAAOpAse40p3uc09yHOjm1zqchcDYEovKfoBC2BgY7vJ9QILYjWV6voDvekFwXrb+17pyjcHU5GEgCWBgj785yAMCAMKBiwJFoQmwAweK3Yv0IMI/wbCAi7wgQ2S4AUP2MHwYrAkJEyQNFChAR1gcADu4E9/iJjEnzxxige84jRMhRI4pgQeKgA/hEAUDzkmxg82AK8c4xjGBMkuMYzsWiPvuMcIbgGQcSxkIt+YydctiAHaaeQdDKbIWEbIlgfQZX+4YCqQSDMktuAPKBsk/xUn2IKat4AGnKo5zUgeSHblrGbX3pnNbi4InPm85jrD686QyDMloYroQDzYH4hW9CUYfedArNcfj8h0pv2xBk8WpBb+4IWmVeCNFmt601kuSHYRcGrXnvoRnPY0QUAt6kyT2tSt/ipCfoCLU/OCBXLFdK4fwmtfs0ATU9mBspWtAlzwsCA5yEIZlr2DMhwhccmmtqL/kd0AaPvCUaV2s59NkGhPe9nWxna4l+2P8BlkBP5QAbUDcAUPwIvaXnZ3QeAt72XTGxlTaYTABc5mcnRIIAnwhzQG3ohtyIAB8GJ4I7ad3Wgw3LUSL/jB/5HwhQ/c4RDvRwIkfgJRtKAJKP9vwkhe4Q8vbIHhHTjCVUVOcpOnXOWZYLnLYX4EEExFEUAPegeUlYkLNeFJXgi6IlBAAA+M7udKp/gFLBB1cCsd6EMXRdEjhHSlM93p/9AECwjhdad4AQFXP0c6wz72sjfl7Gk/AAOmgoi62x0RQzeKF+6OCCUwAYb+4LvUtXB31/K97nmXyd7v7vcIaqIPKuA7AjoQg8rHgAIdiMbhA9AFGEDn8ZG/++Qtf/
-nMb77zEpjKIFbP+tVHwwsEOgEeWj+IDBzhBQaIjh1oL3VVtN61tGf962M/+9bbHvcCIQUMfhD85gc/AyuQASmSv3znW3/10Jc+vBDAfe6ro/vgDz//ArTQhhWI4aBitwD4t02KNaBg/eAO//fFL37ym/+gBhDAC3BA//5zPwUfsALW0Cv5t3/+138AKIDQMRWE0ICEgAeAYAUo4IAU6IA9MAFd0ADb5Ad1UAMUuG2fAAN/8IHgRoEQKIEVWIEXmIHblAOfoAAHoAMpOIOEgAProAcHQAu5JxAuCIMySIMVaIM4qIP1YQFGaAEUgAQfsAEBcIROaAHi8AGdBxQDcQYegAH4UABGeF8PwQDtgAFgoIUWwIVT4YRJuIRN+IRGGIVTyEtUsAEr8AFWMA5i+IRDgAQYAAVdsA9cAHEl9oZxOId16IR3mId72Id6AwqKCAoUgAX7/4ABcigHitgD0wAGauADBzAHLuBpGaUAK+ADUJALbEAYGCUIQXAAbBCKowgvi8iIjgiJViCJoECJloiJmihr83QKDbAiN6AHoZgLwJgLUKAHN7ACEEALn7CDWqaLvOiLwQiMw1iMx5iMCKMK1qgKFHBMAKAAR8AOgQMFPtAFMuABXJAKuGgA8aANwLABG9AAnQARaaAJtEBb7fiOU3GN2KiN3OiNwhiO41iOuCgQEuACVCAA7RAE7JiQ7FgH2gAL/cAAASmQBGmQCKmQC9mQDylrU7EKHLkKFBAKAMAAp0ALm8COHrAJAsAFnYBPt5IKpIBsKxkRUPSS/RCTG9mRH/8ZkiNZkhtwkikZkzLJAGcwA8jWD0bZD5/QCangRBMBRUNZlEeZlEt5UOHCClbJCjEAkv8ARSDwCZqADCDAACwZHvBylViplVzplWAplmRJllOBCnCJClkZaG35EG8Zl3NZl3oZKglQCn5ZCnm5l1LRl38ZmIKpl5pQDtAQC4xpBFp5mAghBorJmLHgmHQJmaLRCRBQAbLQmZaJmQdxCpvZmbLwmaBJlgzQAA
-cABkRQmmjQRqdJEKm5mq1pBK8Zm+FxCTOwi0+QB/sgAH6Im5S0mxDQm78ZnMJZGBIwA7RQBxsAA/SgjMK5nM35nNGZnMBxCQzQCZowAxCJnQKhndwI6Z0RCZ4YERAAOw==) top left no-repeat;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAYAAAAZUZThAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NjcyOSwgMjAxMi8wNS8wMy0xMzo0MDowMyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIEVsZW1lbnRzIDEyLjAgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNEM0MzkyQUJFNDMxMUUzOEU3NkQyNjI4RkEzRjIzNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNEM0MzkyQkJFNDMxMUUzOEU3NkQyNjI4RkEzRjIzNyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA0QzQzOTI4QkU0MzExRTM4RTc2RDI2MjhGQTNGMjM3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA0QzQzOTI5QkU0MzExRTM4RTc2RDI2MjhGQTNGMjM3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+2Z0n9QAADbBJREFU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) top left no-repeat;
 	height:69px;
 	font-size:0.85em;
 	margin-bottom:10px;
@@ -735,7 +730,7 @@ var enStrings = "dir=ltr\n" +
 "del-heads=Delete files\n" +
 "del-head=Delete file\n" +
 "del-file=Delete\n" +
-"atm=About this MOD";
+"atm=About this Addon";
 
 var box = codes_ll;
 var currentLanguage = "en";
@@ -1753,7 +1748,7 @@ function toggle_edit(o)
 
 	<xsl:template name="give-header">
 		<fieldset>
-			<legend id="lang-atm">About this MOD</legend>
+			<legend id="lang-atm">About this Addon</legend>
 			<div class="mod-about">
 				<span class="corners-top"><span></span></span>
 				<dl>
@@ -1863,14 +1858,14 @@ function toggle_edit(o)
 		</xsl:if>
 		<h3 id="lang-icf">Included files</h3>
 		<xsl:if test="count(../mod:action-group/mod:copy/mod:file) = 0">
-			<p id="lang-icfn">No files have been included with this MOD.</p>
+			<p id="lang-icfn">No files have been included with this Addon.</p>
 		</xsl:if>
 		<xsl:for-each select="../mod:action-group">
 			<xsl:call-template name="give-files-included"></xsl:call-template>
 		</xsl:for-each>
 		<h3 id="lang-addtl-modx">Additional file(s)</h3>
 		<xsl:if test="count(mod:link-group/mod:link) = 0">
-			<p id="lang-imn">This MOD has no additional file(s).</p>
+			<p id="lang-imn">This Addon has no additional file(s).</p>
 		</xsl:if>
 
 		<ul class="link-group" id="link-group">
@@ -1953,7 +1948,7 @@ function toggle_edit(o)
 						<xsl:variable name="authorname" select="mod:username" />
 						<xsl:for-each select="mod:username">
 							<xsl:choose>
-								<xsl:when test="@phpbbcom = 'no' or @phpbbcom = 'No' or @phpbbcom = 'NO'">
+								<xsl:when test="not(@phpbbcom != '')">
 									<dd name="author-dd"><span dir="ltr"><xsl:value-of select="$authorname" /></span></dd>
 								</xsl:when>
 
@@ -1972,10 +1967,10 @@ function toggle_edit(o)
 													<xsl:with-param name="string-in" select="string($authorurl)"/>
 												</xsl:call-template>
 											</xsl:variable>
-											<dd name="author-dd"><a dir="ltr" href="https://www.phpbb.com/community/memberlist.php?mode=viewprofile&amp;un={$operaurl}"><xsl:value-of select="$authorname" /></a></dd>
+											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@phpbbcom}-{$operaurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
 										</xsl:when>
 										<xsl:otherwise>
-											<dd name="author-dd"><a dir="ltr" href="https://www.phpbb.com/community/memberlist.php?mode=viewprofile&amp;un={$authorurl}"><xsl:value-of select="$authorname" /></a></dd>
+											<dd name="author-dd"><a dir="ltr" href="http://forums.oscommerce.com/user/{@phpbbcom}-{$authorurl}/" target="_blank"><xsl:value-of select="$authorname" /></a></dd>
 										</xsl:otherwise>
 
 									</xsl:choose>
@@ -1993,7 +1988,7 @@ function toggle_edit(o)
 						</xsl:if>
 						<xsl:if test="mod:homepage != 'N/A' and mod:homepage != 'n/a' and mod:homepage!=''">
 							<dt id="lang-a-h[{generate-id()}]">WWW:</dt>
-							<dd name="author-dd"><a href="{mod:homepage}" dir="ltr"><xsl:value-of select="mod:homepage" /></a></dd>
+							<dd name="author-dd"><a target="_blank" href="{mod:homepage}" dir="ltr"><xsl:value-of select="mod:homepage" /></a></dd>
 						</xsl:if>
 						<xsl:if test="count(mod:contributions-group) > 0">
 							<dt id="lang-a-c[{generate-id()}]">Contributions:</dt>
