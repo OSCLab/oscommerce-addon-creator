@@ -221,13 +221,8 @@
 							</dd>
 						</dl>
 						<dl>
-							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-phpbbcom">Not osCommerce.com:</label></dt>
-							<dd class="author-rows">
-								<label>
-									<input type="checkbox" name="author[{author_row.FIELD_ID}][phpbbcom]" id="author-{author_row.FIELD_ID}-phpbbcom"<!-- IF author_row.S_PHPBB_COM --> checked="checked"<!-- ENDIF --> />
-									<span style="font-size: 12px;">(Check here if this author is not registered at osCommerce.com.)</span>
-								</label>
-							</dd>
+							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-phpbbcom">Forum user ID:</label><img class="sign" src="./images/info.png" alt="Info icon" title="If the author is registered to forums.oscommerce.com will be created a link to profile." /></dt>
+							<dd><input class="inputbox autowidth" type="text" name="author[{author_row.FIELD_ID}][phpbbcom]" id="author-{author_row.FIELD_ID}-phpbbcom" size="10" maxlength="25" value="{author_row.PHPBB_COM}" /></dd>
 						</dl>
 						<dl>
 							<dt class="author-rows"><label for="author-{author_row.FIELD_ID}-realname">Real name:</label></dt>
@@ -293,10 +288,8 @@
 							</dd>
 						</dl>
 						<dl>
-							<dt class="author-rows"><label for="author-afield-phpbbcom">Not osCommerce.com:</label></dt>
-							<dd class="author-rows">
-								<label><input type="checkbox" name="author[afield][phpbbcom]" id="author-afield-phpbbcom" /><span style="font-size: 12px;">(Check here if this author is not registered at osCommerce.com.)</span></label>
-							</dd>
+							<dt class="author-rows"><label for="author-afield-phpbbcom">Forum user ID:</label></dt>
+							<dd class="author-rows"><input  class="inputbox autowidth" name="author[afield][phpbbcom]" type="text" id="author-afield-phpbbcom" size="10" maxlength="25" value="" /></dd>
 						</dl>
 						<dl>
 							<dt class="author-rows"><label for="author-afield-realname">Real name:</label></dt>

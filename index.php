@@ -199,7 +199,7 @@ while ($author = $parser->get_modx_authors())
 	$field_id = 'af_pre_' . $cnt++;
 	$template->assign_block_vars('author_row', array(
 		'FIELD_ID' => $field_id,
-		'S_PHPBB_COM' => (!empty($author['phpbbcom'])) ? true : false,
+		'PHPBB_COM' => (isset($author['phpbbcom'])) ? gen_value($author['phpbbcom']) : '',
 		'USERNAME' => gen_value($author['username']),
 		'REALNAME' => (isset($author['realname'])) ? gen_value($author['realname']) : '',
 		'HOMEPAGE' => (isset($author['homepage'])) ? gen_value($author['homepage']) : '',

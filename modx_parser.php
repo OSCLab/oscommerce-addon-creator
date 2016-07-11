@@ -235,7 +235,7 @@ class modx_parser extends parser_outdata
 						$this->author[$this->cnt_author]['username'] = (isset($modx_row['value'])) ? $modx_row['value'] : '';
 						if (isset($attrs['phpbbcom']))
 						{
-							$this->author[$this->cnt_author]['phpbbcom'] = true;
+							$this->author[$this->cnt_author]['phpbbcom'] = $attrs['phpbbcom'];
 						}
 					}
 				break;
