@@ -4,7 +4,7 @@ body {
 	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	color: #536482;
-	background-color: #ACA8A1;
+	background-color: #ddd;
 	font-size: 62.5%;			/* This sets the default font size to be equivalent to 10px */
 	margin: 0;
 	text-align: center;
@@ -223,7 +223,7 @@ span.side-left, span.side-right {
 	display: block;
 	width: 20px;
 	height: 150px;
-	background: url("./images/sides_top.gif") no-repeat;
+	/*background: url("./images/sides_top.gif") no-repeat;*/
 }
 
 span.side-left {
@@ -268,7 +268,7 @@ span.corners-bottom span {
 	background-position: 100% 100%;
 }
 
-span.fcorners-bottom, span.fcorners-bottom span {
+/*span.fcorners-bottom, span.fcorners-bottom span {
 	font-size: 1px;
 	line-height: 1px;
 	display: block;
@@ -284,7 +284,7 @@ span.fcorners-bottom {
 
 span.fcorners-bottom span {
 	background-position: 100% -20px;
-}
+}*/
 
 textarea.inputbox {
 	width: 85%;
@@ -292,8 +292,10 @@ textarea.inputbox {
 
 #wrap {
 	width: 910px;
-	background: #FFFFFF url("./images/bg_body.gif") repeat-y 0 0;
-	margin: 10px auto;
+	/*background: #FFFFFF url("./images/bg_body.gif") repeat-y 0 0;*/
+	background-color: #fff;
+	/*margin: 10px auto;*/
+	margin: 0 auto;
 	text-align: left;
 	padding: 0;
 }
@@ -304,13 +306,14 @@ textarea.inputbox {
 }
 
 #page-footer {
-	background: url("./images/bg_footer.gif") repeat-x 0 100%;
+	/*background: url("./images/bg_footer.gif") repeat-x 0 100%;*/
 	margin-top: -20px;
-	clear: both;
+	/*clear: both;*/
+	padding-bottom: 20px;
 }
 
 #page-header {
-	background: url("./images/bg_header.gif") repeat-x 0 0;
+	/*background: url("./images/bg_header.gif") repeat-x 0 0;*/
 	height: 150px;
 	clear: both;
 }

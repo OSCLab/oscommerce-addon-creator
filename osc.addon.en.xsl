@@ -54,7 +54,7 @@ html>body, html>div, html>p, html>th, html>td, html>li, html>dd {
 
 html {
 	color:#536482;
-	/* background:#DBD7D1; */
+	background:#ddd;
 	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-ie browsers */
 	height:100%;
 	margin-bottom:1px;
@@ -64,7 +64,7 @@ body {
 	/* Text-Sizing with ems:http://www.clagnut.com/blog/348/ */
 	font-family:"Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	color:#536482;
-	/* background:#DBD7D1; */
+	background:#ddd;
 	font-size:82.5%;	/* This sets the default font size to be equivalent to 10px */
 	margin:10px 15px;
 }
@@ -271,10 +271,10 @@ span.corners-bottom span {
 fieldset {
 	margin:25px 0;
 	padding:1px 0;
-	border-top:1px solid #D7D7D7;
-	border-right:1px solid #CCCCCC;
-	border-bottom:1px solid #CCCCCC;
-	border-left:1px solid #D7D7D7;
+	border-top:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
 	background-color:#FFFFFF;
 	position:relative;
 }
