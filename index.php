@@ -87,7 +87,7 @@ $target = $parser->get_modx_target_version();
 
 $php_installer = $parser->get_modx_php_installer();
 
-$u_github = $parser->get_modx_github();
+$git = $parser->get_modx_git();
 
 // Check the vars that are not cheched later.
 if ($submit)
@@ -124,9 +124,9 @@ if ($submit)
 		$error['install_time'] = 'install_time';
 	}
 
-	if ($u_github != '' && strpos($u_github, 'https://github.com/') !== 0)
+	if ($git != '' && (strpos($git, 'https://github.com/') === false && strpos($git, 'https://gitlab.com/') === false && strpos($git, 'https://bitbucket.org/') === false && strpos($git, 'https://try.gogs.io/') === false))
 	{
-		$error['github'] = true;
+		$error['git'] = true;
 	}
 }
 
@@ -470,7 +470,7 @@ if (($dload || $preview) && empty($error))
 }
 
 $template->assign_vars(array(
-	'GITHUB'	=> $u_github,
+	'GIT'	=> $git,
 
 	'INSTALL_LEVEL'	=> (isset($install_level)) ? $install_level : '',
 	'INSTALL_TIME'	=> (isset($install_time)) ? $install_time : '',
@@ -490,7 +490,7 @@ $template->assign_vars(array(
 	'S_ERROR_INSTALL_LEVEL'	=> (isset($error['install_level'])) ? true : false,
 	'S_ERROR_INSTALL_TIME'	=> (isset($error['install_time'])) ? true : false,
 	'S_ERROR_AUTHOR'	=> (isset($error['author'])) ? true : false,
-	'S_ERROR_GITHUB'	=> (isset($error['github'])) ? true : false,
+	'S_ERROR_GIT'	=> (isset($error['git'])) ? true : false,
 	'S_ERRORS'			=> (($dload || $preview) && !empty($error)) ? true : false,
 
 	'S_IS_COPY'		=> $s_is_copy,

@@ -649,7 +649,7 @@ var enStrings = "dir=ltr\n" +
 "a-e=Email:\n" +
 "a-n=Name:\n" +
 "a-h=WWW:\n" +
-"a-git=Github:\n" +
+"a-git=Git:\n" +
 "a-c=Contributions:\n" +
 "a-c-f=From\n" +
 "a-c-t=to\n" +
@@ -1829,10 +1829,22 @@ function toggle_edit(o)
 							</xsl:if>
 						</dd>
 					</xsl:if>
-					<xsl:if test="mod:github != 'N/A' and mod:github != 'n/a' and mod:github != ''">
-						<xsl:if test="contains(mod:github, 'https://github.com/')">
-							<dt id="lang-a-git[{generate-id()}]">Github:</dt>
-							<dd name="author-dd"><a href="{mod:github}" dir="ltr"><xsl:value-of select="mod:github" /></a></dd>
+					<xsl:if test="mod:git != 'N/A' and mod:git != 'n/a' and mod:git != ''">
+						<xsl:if test="contains(mod:git, 'https://github.com/')">
+							<dt id="lang-a-git[{generate-id()}]">Git:</dt>
+							<dd name="author-dd"><a href="{mod:git}" dir="ltr"><xsl:value-of select="mod:git" /></a></dd>
+						</xsl:if>
+						<xsl:if test="contains(mod:git, 'https://gitlab.com/')">
+							<dt id="lang-a-git[{generate-id()}]">Git:</dt>
+							<dd name="author-dd"><a href="{mod:git}" dir="ltr"><xsl:value-of select="mod:git" /></a></dd>
+						</xsl:if>
+						<xsl:if test="contains(mod:git, 'https://bitbucket.org/')">
+							<dt id="lang-a-git[{generate-id()}]">Git:</dt>
+							<dd name="author-dd"><a href="{mod:git}" dir="ltr"><xsl:value-of select="mod:git" /></a></dd>
+						</xsl:if>
+						<xsl:if test="contains(mod:git, 'https://try.gogs.io/')">
+							<dt id="lang-a-git[{generate-id()}]">Git:</dt>
+							<dd name="author-dd"><a href="{mod:git}" dir="ltr"><xsl:value-of select="mod:git" /></a></dd>
 						</xsl:if>
 					</xsl:if>
 				</dl>
