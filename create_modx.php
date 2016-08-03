@@ -92,8 +92,8 @@ while ($notes = $parser->get_modx_notes())
 }
 // </author-notes>
 
-// <github>
-write_element('github', $parser->get_modx_github());
+// <git repo>
+write_element('git', $parser->get_modx_git());
 
 // <author-group>
 $xml->startElement('author-group');
